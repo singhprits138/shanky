@@ -36,3 +36,94 @@
     transform: rotate(360deg);
   }
 }
+
+/* Birthday Section */
+.birthday-panel {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 42px;
+  background: linear-gradient(130deg, rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.3));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 36px;
+  box-shadow: 0 35px 65px rgba(8, 5, 20, 0.65);
+  backdrop-filter: blur(18px);
+  text-align: center;
+}
+
+.birthday-panel__banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.birthday-panel__title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.birthday-panel__title {
+  letter-spacing: 0.12em;
+  margin: 0;
+  font-weight: 700;
+  color: #ffd4d4;
+}
+
+.birthday-panel__animated-heart {
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
+  color: #ff5c8d;
+  display: inline-block;
+  animation: heartbeat 1.6s ease-in-out infinite;
+}
+
+.birthday-panel__animated-heart--right {
+  animation-delay: 0.4s;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(0.8);
+  }
+  30% {
+    transform: scale(1.25);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+}
+
+.birthday-panel__emoji {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  color: #ffb4d7;
+}
+
+.birthday-panel__message {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: #f1f5ff;
+  margin: 0 auto 20px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.birthday-panel__highlight {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4, #a18cd1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.birthday-panel__signature {
+  margin-top: 16px;
+  font-style: italic;
+  color: #cfd5f7;
+  letter-spacing: 0.25em;
+}

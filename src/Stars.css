@@ -1,0 +1,117 @@
+/* =========================
+   🌌 STAR BACKGROUND
+========================= */
+
+.stars {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: twinkle 4s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes drift {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-1000px); }
+}
+
+/* =========================
+   🌕 MOON (REALISTIC)
+========================= */
+
+.moon-container {
+  position: fixed;
+  top: 8%;
+  right: 60px;
+  width: 260px;
+  height: 260px;
+  z-index: 1;
+  pointer-events: none;
+  background: transparent;
+}
+
+/* Moon base */
+.moon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: transparent;
+}
+
+/* Moon image */
+.moon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(1.15) contrast(1.1);
+  display: block;
+  border-radius: 50%;
+}
+
+/* 🌘 Moon phase shadow */
+.moon-phase {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  pointer-events: none;
+
+  background: radial-gradient(
+    circle at var(--shadow-x, 120%) 50%,
+    transparent 0%,
+    transparent 25%,
+    rgba(0,0,0,0.4) 35%,
+    rgba(0,0,0,0.7) 50%,
+    rgba(0,0,0,0.85) 65%,
+    transparent 100%
+  );
+
+  transition: background 0.25s linear;
+}
+
+/* ☁️ Clouds glow BEHIND moon */
+.moon-clouds {
+  position: absolute;
+  inset: -50%;
+  background: radial-gradient(
+    circle,
+    rgba(255,255,255,0.12),
+    rgba(255,255,255,0.04),
+    transparent 70%
+  );
+  filter: blur(25px);
+  opacity: 0.6;
+  animation: clouds-drift 80s linear infinite;
+  z-index: -1;
+}
+
+@keyframes clouds-drift {
+  from { transform: translateX(40%); }
+  to   { transform: translateX(-30%); }
+}
+
+/* =========================
+   📱 MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .moon-container {
+    width: 180px;
+    height: 180px;
+    right: 20px;
+    top: 6%;
+  }
+}
