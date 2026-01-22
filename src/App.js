@@ -233,7 +233,7 @@ export default function App() {
 
       {/* Jyotirling */}
       <Section>
-        <h2 className="text-2xl mb-4">Twelve Jyotirling</h2>
+        <h2 className="text-2xl mb-4">Twelve Jyotirlings</h2>
         <p className="text-gray-400 mb-10">
           Twelve silent witnesses of faith.
         </p>
@@ -263,7 +263,7 @@ export default function App() {
 
       {/* Char Dham */}
      <Section>
-      <h2 className="text-2xl mb-4">The Four Dham</h2>
+      <h2 className="text-2xl mb-4">The Four Dhams</h2>
       <p className="text-gray-400 mb-10">
         Some places don’t just change journeys. They steady the soul.
       </p>
@@ -291,12 +291,29 @@ export default function App() {
     </Section>
 
 
+   
+     <Section>
+      <h2 className="text-2xl mb-4">Dattatrey journeys, Saptpuri, Ashtvinayak, Shaktipeeth, Foregin trips and Many more unquie places...to cover</h2>
+    </Section>
+
+
 
       {/* Unspoken */}
       <Section>
         <p className="italic text-gray-400 leading-relaxed">
+         
           Some prayers are never spoken aloud.<br />
           They live quietly… and wish well.
+          <br></br>
+          You know I got inspired by you how you travel all these places.. 
+          later we became the wanderers together. 
+          We were the Magicians of budget travelling; even people used to wonder how you manage everything on a budget.
+          It felt so natural to be with you in every journey.
+          I feel so blessed to have you in my life. 
+          Continue your traveling instead of me as everything has been banned for me forever, My dreams are broken now.
+          but you keep exploring, keep being you. 
+          One day I wish to travel all the places again with you by my side.
+          lvkr bare vha :)
         </p>
       </Section>
 
@@ -304,36 +321,45 @@ export default function App() {
       <Section>
         <div className="birthday-panel" aria-label="Birthday message">
           <div className="birthday-panel__banner">
-            <span className="birthday-panel__emoji">✨✨✨✨✨✨✨✨✨✨✨✨✨✨</span>
+            <span className="birthday-panel__emoji">✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨</span>
             <div className="birthday-panel__title-row">
               <span
                 className="birthday-panel__animated-heart birthday-panel__animated-heart--left"
                 aria-hidden="true"
               >
-                ❤️
+                
               </span>
               <h2 className="birthday-panel__title text-4xl md:text-5xl leading-relaxed">
                 Happyyyy Birthdayyyyy!!!
+                <br />
+                <br></br>
+                वाढदिवसाच्या हार्दिक शुभेच्छा!!!
               </h2>
               <span
                 className="birthday-panel__animated-heart birthday-panel__animated-heart--right"
                 aria-hidden="true"
               >
-                ❤️
+                
               </span>
             </div>
-            <span className="birthday-panel__emoji">✨✨✨✨✨✨✨✨✨✨✨✨✨✨</span>
+            <span className="birthday-panel__emoji">✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨</span>
           </div>
           <br />
           <p className="birthday-panel__message">
+            From the depths of my heart,<br />
             May your journey always be protected.<br />
             May faith walk with you.<br />
-            And may you always remember—<br />
+            And may you always remember...<br />
             <span className="birthday-panel__highlight">
-              you were deeply and purely loved and will always be.
+              you were deeply and purely loved and will always be...till my last breath!
             </span>
           </p>
-          <p className="birthday-panel__signature">— Always wishing you well</p>
+          <p className="birthday-panel__signature">Always wishing you well. <br /><br />— — ❤️Lots of Love from your soul❤️— — </p>
+          <br />
+          <br />
+          <br />
+          <br />
+          <p className="birthday-panel__signature">Ending it here I know you don't like much to read... ;-)</p>
         </div>
       </Section>
 
