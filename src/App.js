@@ -242,7 +242,7 @@ export default function App() {
           {jyotirlingas.map((j, i) => (
             <div
               key={i}
-              className="bg-black/30 rounded-xl overflow-hidden shadow-lg"
+              className="card-panel bg-black/30 rounded-xl overflow-hidden shadow-lg"
             >
               <img
                 src={j.img}
@@ -272,7 +272,7 @@ export default function App() {
         {charDham.map((d, i) => (
           <div
             key={i}
-            className="bg-black/30 rounded-xl overflow-hidden shadow-lg"
+            className="card-panel bg-black/30 rounded-xl overflow-hidden shadow-lg"
           >
             <img
               src={d.img}

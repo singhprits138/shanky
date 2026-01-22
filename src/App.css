@@ -127,3 +127,21 @@
   color: #cfd5f7;
   letter-spacing: 0.25em;
 }
+
+.card-panel {
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.card-panel:hover,
+.card-panel:focus-visible,
+.card-panel:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+@media (hover: none) {
+  .card-panel {
+    box-shadow: none;
+    transform: none;
+  }
+}
